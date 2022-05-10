@@ -1,5 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .App {
   text-align: center;
+  background-color: palevioletred;
+  background-image:url("https://wallpapercave.com/wp/wp2599322.png");
+background-size: cover;
 }
 
 .App-logo {
@@ -7,32 +16,59 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(157, 5, 5);
+  box-shadow: 0 4px 8px 0 rgba(243, 178, 178, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Cat{
+  color: rgb(157, 5, 5);
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  display: grid;
 }
+.Cat-card{
+  display: flex;
+  align-items: center;
+ justify-content: space-around;
+ margin-top: 50px;
+
+
+}
+.polaroid {
+  width: 250px;
+  min-height: 40vh;
+  display: inline;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.polaroid>.img{
+  width: 100%;
+  height: 40vh;
+}
+div.container {
+  padding: 10px;
+}
+.footer{
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+

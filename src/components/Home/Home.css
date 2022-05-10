@@ -1,0 +1,21 @@
+.Home {
+    text-align: center;
+    background-color: palevioletred;
+    background-image:url("https://wallpapercave.com/wp/wp2599322.png");
+  background-size: cover;
+  }
+.App-header {
+
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(157, 5, 5);
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
