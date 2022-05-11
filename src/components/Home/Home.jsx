@@ -2,10 +2,27 @@ import React from 'react'
 import "./Home.css";
 import { Navbar } from '../navbar/Navbar';
 import { Subscription } from '../subscription/Subscription';
+import { useNavigate } from 'react-router-dom';
 
 
 
 export const Home = () => {
+  const navigate = useNavigate()
+  const handleLocation= ()=>{
+    navigate("/product")
+
+  }
+  const navigate2 = useNavigate()
+  const handleLocation2= ()=>{
+    navigate("/product")
+
+  }
+  const navigate3 = useNavigate()
+  const handleLocation3= ()=>{
+    navigate("/product")
+
+  }
+ 
   return (
     <>
     <div className='Home'>
@@ -19,19 +36,25 @@ export const Home = () => {
 </div>
 <div className='Cat'> <h1>- Categories -</h1>
 <div className='Cat-card'>
-<div className="polaroid">
+<div className="polaroid" onClick={()=>{
+            handleLocation()
+          }}>
 <img className='img' src="https://womenxo.com/wp-content/uploads/2021/01/137626679_2764304903830813_5840884603807788258_n.jpg" alt="Bridal"/>
 <div class="container">
-<p>Bridal</p>
+<h3>Bridal</h3>
 </div>
 </div>
-<div className="polaroid">
+<div className="polaroid" onClick={()=>{
+            handleLocation2()
+          }}>
 <img className='img' src="https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/04/Embroidered-Net-Lehenga-in-Beige-and-Red-%E2%80%93-The-Glamorous-708x1024.png" alt="New-Arrival"/>
 <div class="container">
 <h3>New-Arrival</h3>
 </div>
 </div>
-<div className="polaroid">
+<div className="polaroid" onClick={()=>{
+            handleLocation3()
+          }}>
 <img className='img' src="https://www.ethnicplus.in/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/0/2003_1__1.jpg"/>
 <div class="container">
 <h3>Popular-Product</h3>
