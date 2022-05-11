@@ -48,9 +48,11 @@ nav {
    margin-left: 10px;
 }
 @media screen and (max-width: 500px){
-
+    .logo{
+        display: none;
+    }
     .list {
-        flex-direction: column;
+        flex-direction: inline-block;
         height: auto;
     }
     .items:nth-child(1){
@@ -62,6 +64,7 @@ nav {
         border-top: 1px solid rgba(255, 255, 255, 0.555);
         text-align: center;
         margin-right: 0px;
+        display: grid;
         padding: 20px 0;
     }
     .btn {

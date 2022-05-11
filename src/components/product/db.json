@@ -237,5 +237,17 @@
           "rate": 3.9,
           "count": 120
       }
-  }
+  },
+  {
+    "id": 20,
+    "title": "Bridal Lehanga",
+    "price": 20509.95,
+    "description": "Your perfect pack for Special Day",
+    "category": "Bridal clothing",
+    "image": "https://th.bing.com/th/id/OIP.C3cIw2nZfpFqQAYzne4UmwHaJo?pid=ImgDet&rs=1",
+    "rating": {
+        "rate": 3.9,
+        "count": 120
+    }
+}
 ]
