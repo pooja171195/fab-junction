@@ -20,7 +20,7 @@ class ProductCard extends React.Component{
             "https://th.bing.com/th/id/OIP.C3cIw2nZfpFqQAYzne4UmwHaJo?pid=ImgDet&rs=1"
           ],
         "description": "Your perfect pack for Special Day",
-        "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+        "content": "zdsgfhjkl.",
         "price": 20509.95,
         "colors":["red","black","crimson","teal"],
         "count": 1

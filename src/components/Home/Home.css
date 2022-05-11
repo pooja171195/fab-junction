@@ -77,5 +77,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+  @media screen and (max-width: 500px){
+    .Cat-card{
+      display: grid;
+     
+    }
+    .polaroid{
+      margin-top: 30px;
+    }
+    .home-header{
+      margin-top: 20px;
+    }
+  }
   
