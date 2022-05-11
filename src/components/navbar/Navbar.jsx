@@ -6,11 +6,7 @@ export const  Navbar= () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
-  const navigate = useNavigate()
-  const handleLocation= ()=>{
-    navigate("/SignIn")
-
-  }
+ 
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu)
@@ -32,14 +28,11 @@ export const  Navbar= () => {
 
   return (
     <nav>
-        <>
-        
-        
       {(toggleMenu || screenWidth > 500) && (
         <div className="list">
      <div className='logo'><img src='https://th.bing.com/th/id/R.2ca53069ae24cccef974244f5378e978?rik=wMgxCivTHXruRg&riu=http%3a%2f%2fwww.pngimagesfree.com%2fWedding_png%2fWedding_clipart_image_thirteen.png&ehk=R8O1FvJEHuDnHyx1PUE7Hxuz%2fhbBrek8jZPJIqwQ0bU%3d&risl=&pid=ImgRaw&r=0'/></div>
         <div className='items'>
-        <div  className="items"> Sign In</div>
+        <div  className="items" > Sign In</div>
       <div className="items">Sign Up</div>
       <div className="items">Cart</div>
         </div>
@@ -48,7 +41,7 @@ export const  Navbar= () => {
       )}
 
       <button onClick={toggleNav} className="btn">=</button>
-      </>
+    
     </nav>
   
   )
