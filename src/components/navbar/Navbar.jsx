@@ -1,75 +1,68 @@
-import React, {useState, useEffect} from 'react'
-
-import './navbar.css'
-import { useNavigate } from "react-router-dom";
-export const  Navbar= () => {
-  const [toggleMenu, setToggleMenu] = useState(false)
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-
-  const navigate = useNavigate()
-  const handleLocation= ()=>{
-    navigate("/")
-
-  }
-  const navigate2 = useNavigate()
-  const handleLocation2= ()=>{
-    navigate2("/SignIn")
-
-  }
-  const navigate3 = useNavigate()
-  const handleLocation3= ()=>{
-    navigate3("/SignUp")
-
-  }
-  const navigate4 = useNavigate()
-  const handleLocation4= ()=>{
-    navigate4("/Cart")
-
-  }
-
-  const toggleNav = () => {
-    setToggleMenu(!toggleMenu)
-  }
-
-  useEffect(() => {
-
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    }
-
-    window.addEventListener('resize', changeWidth)
-
-    return () => {
-        window.removeEventListener('resize', changeWidth)
-    }
-
-  }, [])
+import React from "react";
+import "./navbar.css";
+import { NavLink } from "react-router-dom";
+import { useSelector} from "react-redux";
+export const Navbar = () => {
+const state = useSelector((state)=>state.handleCart)
 
   return (
-    <nav>
-      {(toggleMenu || screenWidth > 500) && (
-        <div className="list">
-     <div className='logo'onClick={()=>{
-            handleLocation()
-          }}><img src='https://th.bing.com/th/id/R.2ca53069ae24cccef974244f5378e978?rik=wMgxCivTHXruRg&riu=http%3a%2f%2fwww.pngimagesfree.com%2fWedding_png%2fWedding_clipart_image_thirteen.png&ehk=R8O1FvJEHuDnHyx1PUE7Hxuz%2fhbBrek8jZPJIqwQ0bU%3d&risl=&pid=ImgRaw&r=0'/></div>
-        <div className='items'>
-        <div  className="items" onClick={()=>{
-            handleLocation2()
-          }}> Sign In</div>
-      <div className="items" onClick={()=>{
-            handleLocation3()
-          }}>Sign Up</div>
-      <div className="items" onClick={()=>{
-            handleLocation4()
-          }}>Cart</div>
-        </div>
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow em">
      
-    </div>
-      )}
+        <div className="container">
+          <NavLink className="navbar-brand fw-bold fs-4" to="/">
+          <img src='https://th.bing.com/th/id/R.2ca53069ae24cccef974244f5378e978?rik=wMgxCivTHXruRg&riu=http%3a%2f%2fwww.pngimagesfree.com%2fWedding_png%2fWedding_clipart_image_thirteen.png&ehk=R8O1FvJEHuDnHyx1PUE7Hxuz%2fhbBrek8jZPJIqwQ0bU%3d&risl=&pid=ImgRaw&r=0' height="80px" width="80px"/>
+          </NavLink>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <button onClick={toggleNav} className="btn">=</button>
+            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+
+              <li className="nav-item">
+                <NavLink className="nav-link active" aria-current="page" to="/">
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/product">
+                  Products
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/about">
+                  About
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/contact">
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+           
+        <div className="buttons">
+         <NavLink to="/login" className="btn btn-outline-dark me-2">
+           <i className="fa fa-sign-in me-2"></i>Login</NavLink>
+           <NavLink to="/register" className="btn btn-outline-dark me-2">
+           <i className="fa fa-user-plus me-2"></i>Register</NavLink>
+           <NavLink to="/cart" className="btn btn-outline-dark me-2">
+           <i className="fa fa-shopping-cart me-2"></i>Cart({state.length})</NavLink>
+        </div>
+         
+          </div>
+        </div>
     
-    </nav>
-  
-  )
-}
+      </nav>
+    </div>
+  );
+};

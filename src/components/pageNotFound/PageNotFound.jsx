@@ -1,13 +1,14 @@
 import React from 'react';
-import { Navbar } from '../navbar/Navbar';
+
 import "./PageNotFound.css";
 import { useNavigate } from "react-router-dom";
 export const PageNotFound = () => {
   const navigate = useNavigate();
   return (
     <>
+   
       <div>
-        <Navbar />
+        
       </div>
       <hr />
       <div className="PImg">

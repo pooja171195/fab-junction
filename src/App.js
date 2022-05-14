@@ -1,32 +1,32 @@
 import './App.css';
-
 import React from 'react';
-import { Route, Routes} from "react-router-dom";
 import { Home } from './components/Home/Home';
-import { SignIn } from './components/signin/SignIn';
-import { SignUp } from './components/signup/SignUp';
-import { Contact } from './components/contact/Contact';
+import {Routes, Route} from "react-router-dom";
+import { Products } from './components/Products';
 import { PageNotFound } from './components/pageNotFound/PageNotFound';
-import { ProductDetails } from './components/product/ProductDetails';
-import ProductCard from './components/product/ProductCard';
-import { Cart } from './components/cart/Cart';
-
-
+import Product from './components/product/Product';
+import {SignIn} from "./components/signin/SignIn";
+import {SignUp} from "./components/signup/SignUp";
+import {Contact} from "./components/contact/Contact";
+import {About} from "./components/contact/About"
+import { Navbar } from './components/navbar/Navbar';
 function App() {
   return (
- 
-<div className='App'>
-<Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/SignIn"  element={<SignIn/>}/>
-    <Route path="/SignUp"  element={<SignUp/>}/>
-    <Route path="/Product"  element={<ProductDetails/>}/>
-    <Route path="/product-Details"  element={<ProductCard/>}/>
-    <Route path="/Contact"  element={<Contact/>}/>
-    <Route path="/Cart"  element={<Cart/>}/>
-    <Route path="*"  element={<PageNotFound/>}/>
-</Routes>
-</div>
+<>
+<Navbar/>
+  <Routes>
+   
+  <Route  path='/' element={<Home/>}/>
+  <Route  path='/product' element={<Products/>}/>
+  <Route  path='/product/:id' element={<Product/>}/>
+  <Route  path='/login' element={<SignIn/>}/>
+  <Route  path='/register' element={<SignUp/>}/>
+  <Route  path='/contact' element={<Contact/>}/>
+  <Route  path='/about' element={<About/>}/>
+  <Route  path='*' element={<PageNotFound/>}/>
+  </Routes>
+  
+  </>
   );
 }
 
