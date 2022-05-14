@@ -11,7 +11,7 @@ export const Products = () => {
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);
-      const response = await fetch("http://localhost:8000/products");
+      const response = await fetch("http://localhost:8000/product");
       if (componentMounted) {
         setData(await response.clone().json());
         setFilter(await response.json());
@@ -55,18 +55,18 @@ export const Products = () => {
           <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("Jewellery")}>Jewellery</button>
           <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("Bridal Jewellery")}>Bridal Jewellery</button>
         </div>
-        {filter.map((products) => {
+        {filter.map((product) => {
           return (
             <>
             <div className="col-md-3 mb-4">
-              <div className="card h-100 text-center p-4" key={products.id}>
-                <img className="card-img-top" src={products.image} alt={products.title} height="250px" />
+              <div className="card h-100 text-center p-4" key={product.id}>
+                <img className="card-img-top" src={product.image} alt={product.title} height="250px" />
                 <div className="card-body">
-                  <h5 className="card-title text-danger mb-0">{products.title.substring(0,15)}...</h5>
+                  <h5 className="card-title text-danger mb-0">{product.title.substring(0,15)}...</h5>
                   <p className="card-text lead fw-bold text-success">
-            ₹{products.price}
+            ₹{product.price}
                   </p>
-                  <NavLink to={`/products/${products.id}`} className="btn btn-outline-danger">
+                  <NavLink to={`/product/${product.id}`} className="btn btn-outline-danger">
                     Buy Now
                   </NavLink>
                 </div>

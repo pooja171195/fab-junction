@@ -9,13 +9,13 @@ export const Cart = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-4">
-          <img src={products.imge} alt={products.title} height="200px" width="180px"/>
+          <img src={product.imge} alt={product.title} height="200px" width="180px"/>
         </div>
         <div className="col-md-4">
           <h3>{products.title}</h3>
-          <p className="lead">{products.qty}x₹{products.price}=₹{products.qty}*{products.price}</p>
-        <button className="btn btn-outline-danger me-4" onClick={()=>handleButton(products)}><i className="fa fa-minus"></i></button>
-        <button className="btn btn-outline-danger me-4" onClick={()=>handleButton(products)}><i className="fa fa-plus"></i></button>
+          <p className="lead">{product.qty}x₹{product.price}=₹{product.qty}*{product.price}</p>
+        <button className="btn btn-outline-danger me-4" onClick={()=>handleButton(product)}><i className="fa fa-minus"></i></button>
+        <button className="btn btn-outline-danger me-4" onClick={()=>handleButton(product)}><i className="fa fa-plus"></i></button>
         </div>
 
       </div>

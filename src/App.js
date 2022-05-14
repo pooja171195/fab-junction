@@ -10,6 +10,7 @@ import {SignUp} from "./components/signup/SignUp";
 import {Contact} from "./components/contact/Contact";
 import {About} from "./components/contact/About"
 import { Navbar } from './components/navbar/Navbar';
+import { Cart } from './components/cart/Cart';
 function App() {
   return (
 <>
@@ -23,6 +24,7 @@ function App() {
   <Route  path='/register' element={<SignUp/>}/>
   <Route  path='/contact' element={<Contact/>}/>
   <Route  path='/about' element={<About/>}/>
+  <Route  path='/cart' element={<Cart/>}/>
   <Route  path='*' element={<PageNotFound/>}/>
   </Routes>
   

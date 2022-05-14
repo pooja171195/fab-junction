@@ -1,13 +1,13 @@
-export const addCart=(products)=>{
+export const addCart=(product)=>{
     return{
         type : "ADDCART",
-        payload: products
+        payload: product
     }
 }
 
-export const delCart=(products)=>{
+export const delCart=(product)=>{
     return{
         type : "DELITEM",
-        payload: products
+        payload: product
     }
 }
