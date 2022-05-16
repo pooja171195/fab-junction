@@ -11,6 +11,7 @@ import {Contact} from "./components/contact/Contact";
 import {About} from "./components/contact/About"
 import { Navbar } from './components/navbar/Navbar';
 import { Cart } from './components/cart/Cart';
+import { Checkout } from './components/cart/Checkout';
 function App() {
   return (
 <>
@@ -25,6 +26,7 @@ function App() {
   <Route  path='/contact' element={<Contact/>}/>
   <Route  path='/about' element={<About/>}/>
   <Route  path='/cart' element={<Cart/>}/>
+  <Route  path='/checkout' element={<Checkout/>}/>
   <Route  path='*' element={<PageNotFound/>}/>
   </Routes>
   

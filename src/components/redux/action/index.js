@@ -1,6 +1,6 @@
-export const addCart=(product)=>{
+export const addCart =(product)=>{
     return{
-        type : "ADDCART",
+        type : "ADDITEM",
         payload: product
     }
 }
@@ -11,3 +11,9 @@ export const delCart=(product)=>{
         payload: product
     }
 }
+const clearCart=()=>{
+    return dispatchEvent({
+        type:"CLEAR_CART"
+    });
+};
+

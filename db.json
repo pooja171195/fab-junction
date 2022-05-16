@@ -5,7 +5,7 @@
         "title": "Bridal Lehanga",
         "price": 20509.95,
         "description": "Your perfect pack for Special Day",
-        "category": "Jewellery",
+        "category": "Bridal Clothing",
         "image": "https://th.bing.com/th/id/OIP.C3cIw2nZfpFqQAYzne4UmwHaJo?pid=ImgDet&rs=1",
         "rating": {
             "rate": 3.9,
@@ -14,25 +14,25 @@
     },
     {
         "id": 2,
-        "title": "Bridal Lehanga",
-        "price": 20509.95,
+        "title": "Alloy Gold-plated Jewel Set  (Green)",
+        "price": 305.95,
         "description": "Your perfect pack for Special Day",
-        "category": "Bridal clothing",
-        "image": "https://th.bing.com/th/id/OIP.C3cIw2nZfpFqQAYzne4UmwHaJo?pid=ImgDet&rs=1",
+        "category": "Bridal Jewellery",
+        "image": "https://rukminim1.flixcart.com/image/832/832/l1ch4sw0/jewellery-set/g/q/z/na-cultured-sf0408-green-semi-bridal-combo-set-ratmanee-original-imagcxu8nx28pgey.jpeg?q=70",
         "rating": {
-            "rate": 3.9,
+            "rate": 4.9,
             "count": 120
         }
     },
     {
         "id": 3,
-        "title": "Bridal Lehanga",
-        "price": 20509.95,
+        "title": "Kundan earring & Maangtikka Alloy Earring Set",
+        "price": 509.9,
         "description": "Your perfect pack for Special Day",
-        "category": "Bridal clothing",
-        "image": "https://th.bing.com/th/id/OIP.C3cIw2nZfpFqQAYzne4UmwHaJo?pid=ImgDet&rs=1",
+        "category": "Jewellery",
+        "image": "https://rukminim1.flixcart.com/image/832/832/ku4ezrk0/earring/u/e/d/na-kundan-earring-maangtikka-manath-original-imag7bahvtwgbar6.jpeg?q=70",
         "rating": {
-            "rate": 3.9,
+            "rate": 4,
             "count": 120
         }
     },
@@ -250,6 +250,53 @@
           "rate": 3.9,
           "count": 120
       }
-  }
+  }, {
+    "id": 21,
+    "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+    "price": 695,
+    "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+    "category": "Jewellery",
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+        "rate": 4.6,
+        "count": 400
+    }
+},
+{
+    "id": 22,
+    "title": "Solid Gold Petite Micropave ",
+    "price": 168,
+    "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+    "category": "Jewellery",
+    "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+        "rate": 3.9,
+        "count": 70
+    }
+},
+{
+    "id": 23,
+    "title": "White Gold Plated Princess",
+    "price": 9.99,
+    "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+    "category": "Jewellery",
+    "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+        "rate": 3,
+        "count": 400
+    }
+},
+{
+    "id": 24,
+    "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+    "price": 10.99,
+    "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+    "category": "Jewellery",
+    "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+        "rate": 1.9,
+        "count": 100
+    }
+}
   ]
 }

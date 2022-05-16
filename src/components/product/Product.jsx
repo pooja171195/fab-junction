@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ProductCard.css';
 import Skeleton from "react-loading-skeleton";
-import{addCart} from "../redux/action"
+import{addCart} from "../redux/action/index"
 import {  useDispatch } from 'react-redux';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
@@ -12,7 +12,7 @@ const {id}=useParams();
  const [loading,setLoading]=useState(false);
  const dispatch = useDispatch();
  const addProduct = (product)=>{
-     dispatch(addCart(product))
+     dispatch(addCart(product));
  }
  useEffect(()=>{
      const getProduct= async () => {
