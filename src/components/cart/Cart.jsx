@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Cart.css";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { addCart } from "../redux/action";
 
 
 
