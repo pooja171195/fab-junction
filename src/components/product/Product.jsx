@@ -6,7 +6,7 @@ import {  useDispatch } from 'react-redux';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
-const Product=()=>{
+export const Prod=()=>{
 const {id}=useParams();
  const [product, setProduct]=useState([]);
  const [loading,setLoading]=useState(false);
@@ -78,4 +78,3 @@ const {id}=useParams();
     );
   };
 
-export default Product;

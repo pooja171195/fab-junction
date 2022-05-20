@@ -22,10 +22,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+
+    "homepage": "."
+   
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +41,7 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
+  
     ],
     "development": [
       "last 1 chrome version",

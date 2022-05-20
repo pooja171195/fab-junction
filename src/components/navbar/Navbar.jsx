@@ -12,7 +12,7 @@ const state = useSelector((state)=>state.handleCart);
      
         <div className="container">
           <NavLink className="navbar-brand fw-bold fs-4" to="/">
-          <img src= './R.png' alt="logo" height="80px" width="80px"/>
+          <img src= 'https://i.pinimg.com/736x/05/c6/5d/05c65d66d5b66f664e7a7f7f3a3716be.jpg' alt="logo" height="80px" width="80px"/>
           </NavLink>
           <button
             className="navbar-toggler"

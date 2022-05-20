@@ -1,9 +1,10 @@
 
 import React from 'react'
 import { useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 //import product from "./Cart"
 export const Checkout = () => {
-  const [product,setProduct] = useSelector((state)=>state.handleCart);
+  const [product] = useSelector((state)=>state.handleCart);
   const state =  useSelector((state)=>state.handleCart);
  
  
@@ -188,7 +189,7 @@ export const Checkout = () => {
 
           <hr class="my-4"/>
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          <NavLink to="/order" className="btn btn-danger ms-2 px-4" type="submit" onClick={() => {if(window.confirm('Are you sure to place order?')){if(true){console.log("Your order has been placed")}};}}>Continue to checkout</NavLink>
         </form>
         </div>
       </div>

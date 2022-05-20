@@ -1,0 +1,39 @@
+.PImg>img{
+    height: 40vh;
+    width:40%;
+    margin-left: 30%;
+    margin-top: 10vh;
+
+}
+.PBtn>button{
+    height: 8vh;
+    width: 10%;
+    background-color: rgb(253, 95, 95);
+    border: 1px solid rgb(253, 95, 95);
+    border-radius: 10px;
+   color: white;
+   margin-bottom: 5vh;
+   margin-top: 5vh;
+}
+.PBtn>button:hover{
+    background-color: rgb(253, 45, 45);
+    border: 1px solid rgb(253, 45, 45);
+}
+
+.PBtn{
+   text-align: center;
+   margin-top: 10vh;
+   margin-left: 5%;
+}
+@media screen and (max-width: 500px){
+    .PBtn>button{
+        width: 25%;
+    }
+    .PImg>img{
+        height: 40vh;
+        width:100%;
+        margin-left: 0px;
+        margin-top: 30vh;
+    
+    }
+}
