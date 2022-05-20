@@ -22,7 +22,7 @@ const {id}=useParams();
          setLoading(false);
      }
      getProduct();
- },[]);
+ },[id]);
    const Loading = ()=>{
        return(
            <>

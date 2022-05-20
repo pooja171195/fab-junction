@@ -12,7 +12,7 @@ const state = useSelector((state)=>state.handleCart);
      
         <div className="container">
           <NavLink className="navbar-brand fw-bold fs-4" to="/">
-          <img src='https://th.bing.com/th/id/R.2ca53069ae24cccef974244f5378e978?rik=wMgxCivTHXruRg&riu=http%3a%2f%2fwww.pngimagesfree.com%2fWedding_png%2fWedding_clipart_image_thirteen.png&ehk=R8O1FvJEHuDnHyx1PUE7Hxuz%2fhbBrek8jZPJIqwQ0bU%3d&risl=&pid=ImgRaw&r=0' height="80px" width="80px"/>
+          <img src= './R.png' alt="logo" height="80px" width="80px"/>
           </NavLink>
           <button
             className="navbar-toggler"
@@ -27,7 +27,7 @@ const state = useSelector((state)=>state.handleCart);
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav mx-auto mb-2 mb-lg-0" >
 
               <li className="nav-item">
                 <NavLink className="nav-link active" aria-current="page" to="/">

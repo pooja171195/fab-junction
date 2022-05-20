@@ -4,7 +4,7 @@ import { Home } from './components/Home/Home';
 import {Routes, Route} from "react-router-dom";
 import { Products } from './components/Products';
 import { PageNotFound } from './components/pageNotFound/PageNotFound';
-import Product from './components/product/Product';
+import {Product} from './components/product/Product';
 import {SignIn} from "./components/signin/SignIn";
 import {SignUp} from "./components/signup/SignUp";
 import {Contact} from "./components/contact/Contact";

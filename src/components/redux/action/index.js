@@ -11,7 +11,7 @@ export const delCart=(product)=>{
         payload: product
     }
 }
-const clearCart=()=>{
+export const clearCart=()=>{
     return dispatchEvent({
         type:"CLEAR_CART"
     });

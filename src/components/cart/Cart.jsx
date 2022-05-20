@@ -26,8 +26,13 @@ useEffect(()=>{
 };
   getProduct();
 },[]);
-const handleButton=()=>{
-
+const  handleButton=()=>{
+product.qty = product.qty+1;
+state.length++
+}
+const  handleButton1=()=>{
+  product.qty = product.qty-1;
+  state.length--
 }
 const ShowProducts=()=>{
   return (
@@ -55,7 +60,7 @@ const ShowProducts=()=>{
             </button>
             <button
               className="btn btn-outline-danger me-4"
-              onClick={() => handleButton(product)}
+              onClick={() =>  handleButton1(product)}
             >
               <i className="fa fa-plus"></i>
             </button>
